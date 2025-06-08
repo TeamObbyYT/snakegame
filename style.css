@@ -1,32 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #121212;
-  color: #ffffff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle, #202020, #0a0a0a);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
 }
 
-.game-container {
+.game-wrapper {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 255, 100, 0.3);
   text-align: center;
-}
-
-canvas {
-  background-color: #000;
-  border: 3px solid #fff;
-  display: block;
-  margin: 0 auto;
 }
 
 h1 {
   margin-bottom: 10px;
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+}
+
+.score {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+canvas {
+  border: 2px solid #00ff88;
+  background-color: #000;
+  margin-top: 10px;
+  width: 90vw;
+  max-width: 400px;
+  height: auto;
+  touch-action: none;
 }
 
 .instructions {
-  margin-top: 15px;
-  font-size: 16px;
+  font-size: 14px;
   color: #ccc;
+  margin-top: 20px;
+}
+
+.instructions strong {
+  color: #00ff88;
 }
